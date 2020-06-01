@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A simple template</title>
+	<style>
+		table { 
+			padding: 30px;
+			margin: 0 auto;
+			border: 1px solid black;
+		}
+		td {
+			padding: 5px 30px;
+		}
+		button[type="submit"] {
+			font-size: 18px;
+			margin: 5px;
+			cursor: pointer;
+		}
+		input {
+			width: 100%;
+		}
+		.text-center {
+			text-align: center;
+		}
+	</style>
+</head>
+<body >
+    <h1 class="text-center">App Cumplo</h1>
+	<form action="/tmc" method="GET">
+		<table class="self-center">
+			<tr>
+				<th colspan="2"><h2>Calcular TMC</h2></th>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<ul>
+						<strong>Instrucciones:</strong>
+						<li>La fecha cálculo debe ser posterior al de la fecha de vencimiento.</li>
+						<li>La fecha de <strong>vencimiento</strong> debe ser anterior a hoy</li>
+						<li>La fecha de <strong>cálculo</strong> anteriores al día 14 del actual mes.</li>
+						<li><strong>Monto</strong> superior a 0.</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="due_date">Fecha vencimiento del plazo<label></td>
+				<td><input required="true" name="due_date" type="date"></td>
+			</tr>
+			<tr>
+				<td><label for="query_date">Fecha de cálculo<label></td>
+				<td><input required="true" name="query_date" type="date"></td>
+			</tr>
+			<tr>
+				<td><label for="amount">Monto en UF<label></td>
+				<td><input required="true" name="amount" type="decimal"></td>
+			</tr>
+			<tr>
+				<th colspan="2"><button type="submit">Calcular</button></th>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
