@@ -25,7 +25,7 @@ SECRET_KEY = 'j$dtgst77e-36q4a&fci#pr1bgi=e!52)d2hfjbx(cj^+w64u+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS =  ['localhost', '127.0.0.1', 'cumplo-tmc.herokuapp.com']
 
 
 # Application definition
